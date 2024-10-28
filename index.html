@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花の合計金額計算システム</title>
+</head>
+<body>
+
+<h2>花の選択</h2>
+<div id="flowerSelection">
+
+
+    <!-- リトルデイジー -->
+    <label><input type="checkbox" data-name="リトルデイジー" data-color="白" data-price="1300">リトルデイジー (白) - 1300円</label><br>
+    <label><input type="checkbox" data-name="リトルデイジー" data-color="黄" data-price="1300">リトルデイジー (黄) - 1300円</label><br>
+    <label><input type="checkbox" data-name="リトルデイジー" data-color="オレンジ" data-price="1300">リトルデイジー (オレンジ) - 1300円</label><br>
+    <label><input type="checkbox" data-name="リトルデイジー" data-color="ピンク" data-price="1300">リトルデイジー (ピンク) - 1300円</label><br>
+    <label><input type="checkbox" data-name="リトルデイジー" data-color="赤" data-price="1300">リトルデイジー (赤) - 1300円</label><br>
+    <label><input type="checkbox" data-name="リトルデイジー" data-color="紫" data-price="1300">リトルデイジー (紫) - 1300円</label><br>
+    <label><input type="checkbox" data-name="リトルデイジー" data-color="青" data-price="1300">リトルデイジー (青) - 1300円</label><br>
+    <label><input type="checkbox" data-name="リトルデイジー" data-color="紺" data-price="1300">リトルデイジー (紺) - 1300円</label><br>
+
+    <!-- スイセン -->
+    <label><input type="checkbox" data-name="スイセン" data-color="白" data-price="1800">スイセン (白) - 1800円</label><br>
+    <label><input type="checkbox" data-name="スイセン" data-color="黄" data-price="1800">スイセン (黄) - 1800円</label><br>
+
+    <!-- てんとう虫はっぱ -->
+    <label><input type="checkbox" data-name="てんとう虫はっぱ" data-color="" data-price="1500">てんとう虫はっぱ - 1500円</label><br>
+
+    <!-- フェアリーフラワー -->
+    <label><input type="checkbox" data-name="フェアリーフラワー" data-color="ピンク" data-price="1350">フェアリーフラワー (ピンク) - 1350円</label><br>
+    <label><input type="checkbox" data-name="フェアリーフラワー" data-color="黄" data-price="1350">フェアリーフラワー (黄) - 1350円</label><br>
+    <label><input type="checkbox" data-name="フェアリーフラワー" data-color="オレンジ" data-price="1350">フェアリーフラワー (オレンジ) - 1350円</label><br>
+    <label><input type="checkbox" data-name="フェアリーフラワー" data-color="ターコイズ" data-price="1350">フェアリーフラワー (ターコイズ) - 1350円</label><br>
+
+    <!-- ミニデイジー -->
+    <label><input type="checkbox" data-name="ミニデイジー" data-color="白" data-price="1200">ミニデイジー (白) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミニデイジー" data-color="黄" data-price="1200">ミニデイジー (黄) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミニデイジー" data-color="オレンジ" data-price="1200">ミニデイジー (オレンジ) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミニデイジー" data-color="ピンク" data-price="1200">ミニデイジー (ピンク) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミニデイジー" data-color="赤" data-price="1200">ミニデイジー (赤) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミニデイジー" data-color="紫" data-price="1200">ミニデイジー (紫) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミニデイジー" data-color="青" data-price="1200">ミニデイジー (青) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミニデイジー" data-color="紺" data-price="1200">ミニデイジー (紺) - 1200円</label><br>
+
+    <!-- スミレ -->
+    <label><input type="checkbox" data-name="スミレ" data-color="白" data-price="1400">スミレ (白) - 1400円</label><br>
+    <label><input type="checkbox" data-name="スミレ" data-color="ピンク" data-price="1400">スミレ (ピンク) - 1400円</label><br>
+    <label><input type="checkbox" data-name="スミレ" data-color="紫" data-price="1400">スミレ (紫) - 1400円</label><br>
+    <label><input type="checkbox" data-name="スミレ" data-color="青" data-price="1400">スミレ (青) - 1400円</label><br>
+
+    <!-- マーガレット -->
+    <label><input type="checkbox" data-name="マーガレット" data-color="白" data-price="1350">マーガレット (白) - 1350円</label><br>
+    <label><input type="checkbox" data-name="マーガレット" data-color="赤" data-price="1350">マーガレット (赤) - 1350円</label><br>
+    <label><input type="checkbox" data-name="マーガレット" data-color="黄" data-price="1350">マーガレット (黄) - 1350円</label><br>
+
+    <!-- ワイルドローズ -->
+    <label><input type="checkbox" data-name="ワイルドローズ" data-color="白" data-price="1600">ワイルドローズ (白) - 1600円</label><br>
+    <label><input type="checkbox" data-name="ワイルドローズ" data-color="オレンジ" data-price="1600">ワイルドローズ (オレンジ) - 1600円</label><br>
+    <label><input type="checkbox" data-name="ワイルドローズ" data-color="ピンク" data-price="1600">ワイルドローズ (ピンク) - 1600円</label><br>
+    <label><input type="checkbox" data-name="ワイルドローズ" data-color="青" data-price="1600">ワイルドローズ (青) - 1600円</label><br>
+    <label><input type="checkbox" data-name="ワイルドローズ" data-color="赤" data-price="1600">ワイルドローズ (赤) - 1600円</label><br>
+    <label><input type="checkbox" data-name="ワイルドローズ" data-color="黄" data-price="1600">ワイルドローズ (黄) - 1600円</label><br>
+
+    <!-- ストロベリーフラワー -->
+    <label><input type="checkbox" data-name="ストロベリーフラワー" data-color="白" data-price="1200">ストロベリーフラワー (白) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ストロベリーフラワー" data-color="ピンク" data-price="1200">ストロベリーフラワー (ピンク) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ストロベリーフラワー" data-color="赤" data-price="1200">ストロベリーフラワー (赤) - 1200円</label><br>
+
+    <!-- チューリップ -->
+    <label><input type="checkbox" data-name="チューリップ" data-color="白" data-price="2300">チューリップ (白) - 2300円</label><br>
+    <label><input type="checkbox" data-name="チューリップ" data-color="黄" data-price="2300">チューリップ (黄) - 2300円</label><br>
+    <label><input type="checkbox" data-name="チューリップ" data-color="オレンジ" data-price="2300">チューリップ (オレンジ) - 2300円</label><br>
+    <label><input type="checkbox" data-name="チューリップ" data-color="ピンク" data-price="2300">チューリップ (ピンク) - 2300円</label><br>
+    <label><input type="checkbox" data-name="チューリップ" data-color="紫" data-price="2300">チューリップ (紫) - 2300円</label><br>
+    <label><input type="checkbox" data-name="チューリップ" data-color="ターコイズ" data-price="2300">チューリップ (ターコイズ) - 2300円</label><br>
+
+    <!-- ポピー -->
+    <label><input type="checkbox" data-name="ポピー" data-color="" data-price="2000">ポピー - 2000円</label><br>
+
+    <!-- 陶器の花のブレスレット -->
+    <label><input type="checkbox" data-name="陶器の花のブレスレット" data-color="Pozsony" data-price="1500">陶器の花のブレスレット (Pozsony) - 1500円</label><br>
+    <label><input type="checkbox" data-name="陶器の花のブレスレット" data-color="Szamos" data-price="1500">陶器の花のブレスレット (Szamos) - 1500円</label><br>
+    <label><input type="checkbox" data-name="陶器の花のブレスレット" data-color="Kapolcs" data-price="1500">陶器の花のブレスレット (Kapolcs) - 1500円</label><br>
+    <label><input type="checkbox" data-name="陶器の花のブレスレット" data-color="Magyar" data-price="1500">陶器の花のブレスレット (Magyar) - 1500円</label><br>
+    <label><input type="checkbox" data-name="陶器の花のブレスレット" data-color="Sajó" data-price="1500">陶器の花のブレスレット (Sajó) - 1500円</label><br>
+
+    <!-- スイセン (大) -->
+    <label><input type="checkbox" data-name="スイセン (大)" data-color="白" data-price="2300">スイセン (大) (白) - 2300円</label><br>
+    <label><input type="checkbox" data-name="スイセン (大)" data-color="黄" data-price="2300">スイセン (大) (黄) - 2300円</label><br>
+
+    <!-- ベルフラワー -->
+    <label><input type="checkbox" data-name="ベルフラワー" data-color="白" data-price="1650">ベルフラワー (白) - 1650円</label><br>
+    <label><input type="checkbox" data-name="ベルフラワー" data-color="オレンジ" data-price="1650">ベルフラワー (オレンジ) - 1650円</label><br>
+    <label><input type="checkbox" data-name="ベルフラワー" data-color="ピンク" data-price="1650">ベルフラワー (ピンク) - 1650円</label><br>
+    <label><input type="checkbox" data-name="ベルフラワー" data-color="赤" data-price="1650">ベルフラワー (赤) - 1650円</label><br>
+    <label><input type="checkbox" data-name="ベルフラワー" data-color="青" data-price="1650">ベルフラワー (青) - 1650円</label><br>
+    <label><input type="checkbox" data-name="ベルフラワー" data-color="ターコイズ" data-price="1650">ベルフラワー (ターコイズ) - 1650円</label><br>
+
+    <!-- ミラベル -->
+    <label><input type="checkbox" data-name="ミラベル" data-color="白" data-price="1200">ミラベル (白) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミラベル" data-color="黄" data-price="1200">ミラベル (黄) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミラベル" data-color="ピンク" data-price="1200">ミラベル (ピンク) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミラベル" data-color="赤" data-price="1200">ミラベル (赤) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミラベル" data-color="ターコイズ" data-price="1200">ミラベル (ターコイズ) - 1200円</label><br>
+    <label><input type="checkbox" data-name="ミラベル" data-color="紫" data-price="1200">ミラベル (紫) - 1200円</label><br>
+
+" data-color="白" data-price="1800">キキョウ (白) - 1800円</label><br>
+    <label><input type="checkbox" data-name="キキョウ" data-color="黄" data-price="1800">キキョウ (黄) - 1800円</label><br>
+    <label><input type="checkbox" data-name="キキョウ" data-color="ピンク" data-price="1800">キキョウ (ピンク) - 1800円</label><br>
+    <label><input type="checkbox" data-name="キキョウ" data-color="青" data-price="1800">キキョウ (青) - 1800円</label><br>
+    <label><input type="checkbox" data-name="キキョウ" data-color="紺" data-price="1800">キキョウ (紺) - 1800円</label><br>
+    <label><input type="checkbox" data-name="キキョウ" data-color="赤" data-price="1800">キキョウ (赤) - 1800円</label><br>
+
+    <!-- カラー -->
+    <label><input type="checkbox" data-name="カラー" data-color="白" data-price="1500">カラー (白) - 1500円</label><br>
+    <label><input type="checkbox" data-name="カラー" data-color="黄" data-price="1500">カラー (黄) - 1500円</label><br>
+    <label><input type="checkbox" data-name="カラー" data-color="オレンジ" data-price="1500">カラー (オレンジ) - 1500円</label><br>
+    <label><input type="checkbox" data-name="カラー" data-color="ピンク" data-price="1500">カラー (ピンク) - 1500円</label><br>
+    <label><input type="checkbox" data-name="カラー" data-color="赤" data-price="1500">カラー (赤) - 1500円</label><br>
+    <label><input type="checkbox" data-name="カラー" data-color="紫" data-price="1500">カラー (紫) - 1500円</label><br>
+    <label><input type="checkbox" data-name="カラー" data-color="ターコイズ" data-price="1500">カラー (ターコイズ) - 1500円</label><br>
+
+    <!-- プリムラ -->
+    <label><input type="checkbox" data-name="プリムラ" data-color="黄" data-price="1200">プリムラ (黄) - 1200円</label><br>
+    <label><input type="checkbox" data-name="プリムラ" data-color="オレンジ" data-price="1200">プリムラ (オレンジ) - 1200円</label><br>
+    <label><input type="checkbox" data-name="プリムラ" data-color="紺" data-price="1200">プリムラ (紺) - 1200円</label><br>
+    <label><input type="checkbox" data-name="プリムラ" data-color="タビー" data-price="1200">プリムラ (タビー) - 1200円</label><br>
+
+    <!-- フリージア -->
+    <label><input type="checkbox" data-name="フリージア" data-color="黄" data-price="1200">フリージア (黄) - 1200円</label><br>
+    <label><input type="checkbox" data-name="フリージア" data-color="ピンク" data-price="1200">フリージア (ピンク) - 1200円</label><br>
+    <label><input type="checkbox" data-name="フリージア" data-color="赤" data-price="1200">フリージア (赤) - 1200円</label><br>
+    <label><input type="checkbox" data-name="フリージア" data-color="紫" data-price="1200">フリージア (紫) - 1200円</label><br>
+
+    <!-- アジサイ -->
+    <label><input type="checkbox" data-name="アジサイ" data-color="黄" data-price="1200">アジサイ (黄) - 1200円</label><br>
+    <label><input type="checkbox" data-name="アジサイ" data-color="赤" data-price="1200">アジサイ (赤) - 1200円</label><br>
+    <label><input type="checkbox" data-name="アジサイ" data-color="緑" data-price="1200">アジサイ (緑) - 1200円</label><br>
+    <label><input type="checkbox" data-name="アジサイ" data-color="ターコイズ" data-price="1200">アジサイ (ターコイズ) - 1200円</label><br>
+
+    <!-- ハリネズミ -->
+    <label><input type="checkbox" data-name="ハリネズミ" data-color="ブラウン" data-price="3000">ハリネズミ (ブラウン) - 3000円</label><br>
+    <label><input type="checkbox" data-name="ハリネズミ" data-color="グレー" data-price="3000">ハリネズミ (グレー) - 3000円</label><br>
+
+    <!-- ストロベリー -->
+    <label><input type="checkbox" data-name="ストロベリー" data-color="" data-price="2000">ストロベリー - 2000円</label><br>
+
+    <!-- ひつじ -->
+    <label><input type="checkbox" data-name="ひつじ" data-color="白" data-price="2800">ひつじ (白) - 2800円</label><br>
+    <label><input type="checkbox" data-name="ひつじ" data-color="グレー" data-price="2800">ひつじ (グレー) - 2800円</label><br>
+
+    <!-- 陶器の葉 -->
+    <label><input type="checkbox" data-name="陶器の葉" data-color="ライトグリーン" data-price="1400">陶器の葉 (ライトグリーン) - 1400円</label><br>
+    <label><input type="checkbox" data-name="陶器の葉" data-color="ディープグリーン" data-price="1400">陶器の葉 (ディープグリーン) - 1400円</label><br>
+
+    <!-- マダルカ -->
+    <label><input type="checkbox" data-name="マダルカ" data-color="" data-price="4000">マダルカ - 4000円</label><br>
+
+    <!-- ティーカップブーケ（デイジー） -->
+    <label><input type="checkbox" data-name="ティーカップブーケ（デイジー）" data-color="" data-price="3800">ティーカップブーケ（デイジー） - 3800円</label><br>
+
+    <!-- バタフライ -->
+    <label><input type="checkbox" data-name="バタフライ" data-color="白" data-price="1400">バタフライ (白) - 1400円</label><br>
+    <label><input type="checkbox" data-name="バタフライ" data-color="ピンク" data-price="1400">バタフライ (ピンク) - 1400円</label><br>
+    <label><input type="checkbox" data-name="バタフライ" data-color="赤" data-price="1400">バタフライ (赤) - 1400円</label><br>
+    <label><input type="checkbox" data-name="バタフライ" data-color="黄" data-price="1400">バタフライ (黄) - 1400円</label><br>
+    <label><input type="checkbox" data-name="バタフライ" data-color="青" data-price="1400">バタフライ (青) - 1400円</label><br>
+
+    <!-- リース -->
+    <label><input type="checkbox" data-name="リース" data-color="" data-price="10200">リース - 10200円</label><br>
+
+    <!-- フレームアレンジメント -->
+    <label><input type="checkbox" data-name="フレームアレンジメント" data-color="" data-price="6500">フレームアレンジメント - 6500円</label><br>
+
+    <!-- リボンブーケ(リトルデイジー) -->
+    <label><input type="checkbox" data-name="リボンブーケ(リトルデイジー)" data-color="" data-price="5500">リボンブーケ(リトルデイジー) - 5500円</label><br>
+
+    <!-- Virág 花瓶 -->
+    <label><input type="checkbox" data-name="Virág 花瓶" data-color="白" data-price="1400">Virág 花瓶
+
+
+</div>
+
+<h3>合計金額: <span id="totalPrice">0</span>円</h3>
+<h3>アレンジされた花:</h3>
+<ul id="selectedFlowers"></ul>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const checkboxes = document.querySelectorAll('#flowerSelection input[type="checkbox"]');
+      const totalPriceElement = document.getElementById('totalPrice');
+      const selectedFlowersElement = document.getElementById('selectedFlowers');
+
+      function updateSelection() {
+        let totalPrice = 0;
+        let selectedFlowers = [];
+
+        checkboxes.forEach((checkbox) => {
+          if (checkbox.checked) {
+            const name = checkbox.getAttribute('data-name');
+            const color = checkbox.getAttribute('data-color');
+            const price = parseInt(checkbox.getAttribute('data-price'));
+
+            totalPrice += price;
+            selectedFlowers.push(`${name} (${color}) - ${price}円`);
+          }
+        });
+
+        totalPriceElement.textContent = totalPrice;
+        selectedFlowersElement.innerHTML = selectedFlowers.map(flower => `<li>${flower}</li>`).join('');
+      }
+
+      checkboxes.forEach((checkbox) => {
+        checkbox.addEventListener('change', updateSelection);
+      });
+    });
+</script>
+
+</body>
+</html>
